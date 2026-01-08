@@ -1,3 +1,9 @@
 # RAG application backend 
 <hr>
-#### using Python, llama-index, nomic-embed-text & qween2.5:3b
+
+### Tools
+- Python >=3.12
+- llama-index framework
+- Local Ollama with 
+    - nomic-embed-text model for embededing
+    - qween2.5:3b for generate final result
