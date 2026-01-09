@@ -5,7 +5,7 @@ from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.llms.ollama import Ollama
 
 llm = Ollama(
-    model="qwen2.5:3b",  # Embedding-optimized model
+    model="qwen2.5:0.5b",  # Embedding-optimized model
     base_url="http://localhost:11434",
     request_timeout=120.0
 )
@@ -30,6 +30,6 @@ query_engine = index.as_query_engine(
     llm=llm
 )
 
-response = query_engine.query("can i show popup based on user roles using popup pro?")
+response = query_engine.query("tell me aboutCustom CSS Selector")
 print(str(response))
 
