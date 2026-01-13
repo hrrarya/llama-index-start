@@ -18,7 +18,7 @@ qa_prompt_str = (
     "You are an expert support assistant for My Products.\n"
     "Follow these rules strictly:\n"
     "1. Only use the provided context.\n"
-    "2. If the answer is not in the context, say you don't know.\n"
+    "2. If the answer is not in the context, say 'I don’t have relevant context in the documentation to answer that accurately'.\n"
     "3. Answer in concise Markdown.\n\n"
     "Context:\n"
     "---------------------\n"
@@ -46,8 +46,9 @@ async def main():
     #     system_prompt="you are a helpful assistant that can answer questions through the documents in the storage."
     # )
     # response = await agent.run(user_msg="how can i add a new popup?")
-    response = await search_query("how can i enable popup pro in divi builder accordion to documents?")
-    # response = await search_query("how can i add a new popup?")
+    # response = await search_query("how can i enable popup pro in divi builder accordion to documents?")
+    # response = await search_query("tell me about donald trump")
+    response = await search_query("how can i customize project")
     print(str(response))
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ from llama_index.embeddings.ollama import OllamaEmbedding
 
 
 
-DOCUMENT_PATH = "docs/dummy"
+DOCUMENT_PATH = "docs/extensions"
 STORAGE_PATH = "storage"
 splitter = SentenceSplitter( chunk_size=400, chunk_overlap=8 )
 
