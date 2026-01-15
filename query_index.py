@@ -1,7 +1,7 @@
 from llama_index.core import StorageContext, load_index_from_storage, Settings, ChatPromptTemplate
 from llama_index.llms.ollama import Ollama
 from llama_index.embeddings.ollama import OllamaEmbedding
-from llama_index.core.agent.workflow import FunctionAgent
+# from llama_index.core.agent.workflow import FunctionAgent
 import uvloop
 
 llm = Ollama(model="gemma3:4b", base_url="http://localhost:11434", request_timeout=120.0)
@@ -48,7 +48,7 @@ async def main():
     # response = await agent.run(user_msg="how can i add a new popup?")
     # response = await search_query("how can i enable popup pro in divi builder accordion to documents?")
     # response = await search_query("tell me about donald trump")
-    response = await search_query("how can i customize project")
+    response = await search_query("how can i use academy lms in histudy?")
     print(str(response))
 
 if __name__ == "__main__":

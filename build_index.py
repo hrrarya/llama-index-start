@@ -4,9 +4,9 @@ from llama_index.embeddings.ollama import OllamaEmbedding
 
 
 
-DOCUMENT_PATH = "docs/extensions"
+DOCUMENT_PATH = "docs/histudy"
 STORAGE_PATH = "storage"
-splitter = SentenceSplitter( chunk_size=400, chunk_overlap=8 )
+splitter = SentenceSplitter( chunk_size=600, chunk_overlap=20 )
 
 documents = SimpleDirectoryReader(DOCUMENT_PATH).load_data()
 

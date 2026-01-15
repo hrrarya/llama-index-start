@@ -13,7 +13,9 @@ dependencies = [
     "llama-index>=0.14.10",
     "llama-index-embeddings-ollama>=0.8.5",
     "llama-index-llms-ollama>=0.9.1",
+    "locust>=2.43.1",
     "pathlib>=1.0.1",
+    "quart>=0.20.0",
     "requests>=2.32.5",
     "uvloop>=0.22.1",
 ]
