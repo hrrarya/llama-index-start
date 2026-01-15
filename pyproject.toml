@@ -7,13 +7,14 @@ requires-python = ">=3.11"
 dependencies = [
     "bs4>=0.0.2",
     "chromadb>=1.4.0",
-    "flask>=3.1.0",
+    "flask[async]>=3.1.0",
     "html-to-markdown>=2.19.8",
     "langchain-text-splitters>=1.1.0",
     "llama-index>=0.14.10",
     "llama-index-embeddings-ollama>=0.8.5",
     "llama-index-llms-ollama>=0.9.1",
     "pathlib>=1.0.1",
+    "quart>=0.20.0",
     "requests>=2.32.5",
     "uvloop>=0.22.1",
 ]
