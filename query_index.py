@@ -48,7 +48,7 @@ async def main():
     # response = await agent.run(user_msg="how can i add a new popup?")
     # response = await search_query("how can i enable popup pro in divi builder accordion to documents?")
     # response = await search_query("tell me about donald trump")
-    response = await search_query("how can i use academy lms in histudy?")
+    response = await search_query("How can the language dropdown be removed from the header top? I just need a clear, non-destructive explanation.")
     print(str(response))
 
 if __name__ == "__main__":
